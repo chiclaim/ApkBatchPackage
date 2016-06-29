@@ -41,7 +41,8 @@ lenovo
 ### 5、最后
 获取META-INF目录下就有渠道名
 > String channel = ManifestUtil.getChannel(this)
-然后把渠道设置给Umeng：
+
+通过代码的方式把渠道设置给UMENG(友盟)：
 > AnalyticsConfig.setChannel(ManifestUtil.getChannel(this));
 
 
