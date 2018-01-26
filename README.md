@@ -1,4 +1,4 @@
-# android-python-apk-batch
+# android-python-apk-batch(Deprecated)
 android python批量打包脚本
 
 
