@@ -8,19 +8,26 @@ android apk python 批量打包脚本
 1. 安装 Python 环境
 2. 编辑你的 channel 文件
 
+## 渠道文件
+
+channel.txt
+
+```text
+huawei
+xiaomi
+oppo
+vivo
+```
+
 
 ## 运行脚本
 
 ```
-python3 batch_apk.py [your_apk]
+python3 batch_apk.py channel.txt [your_apk]
 ```
-
-## 测试
-把某个apk解压，在META-INF目录下就有渠道文件。
 
 ## 程序中获取渠道
 
 ```
-获取META-INF目录下就有渠道名
-String channel = ManifestUtil.getChannel(this)
+String channel = ManifestUtil.getChannel(context)
 ```
