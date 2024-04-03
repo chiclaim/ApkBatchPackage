@@ -29,5 +29,5 @@ python3 batch_apk.py channel.txt [your_apk]
 ## 程序中获取渠道
 
 ```
-String channel = ManifestUtil.getChannel(context)
+String channel = ChannelUtil.getChannel(context)
 ```
