@@ -44,7 +44,7 @@ Verified using v4 scheme (APK Signature Scheme v4): false
 市面上主流的多渠道打包工具主要有：腾讯的 WasDolly 和美团的 Walle。主要缺点有：
 
 1. 侵入性大
-   需要依赖各自的 plugin，对最低的 agp 最低版本有要求。例如 WasDolly 最低支持 4.2.0
+   需要依赖各自的 plugin，对最低的 AGP 版本有要求。例如 WasDolly 最低支持 4.2.0
 
 2. 兼容性问题
    issue 中有些 闪退问题未解决
@@ -59,7 +59,7 @@ Verified using v4 scheme (APK Signature Scheme v4): false
 
 apktool 也是第三方维护的，也存在很多 issue 未解决。所以 apktool 的方案也放弃了
 
-后面想能不能往apk中，写入渠道文件（和V1渠道包方案一样），然后将apk前面文件删除，在重新签名不就好了么。
+后面想能不能往apk中，写入渠道文件（和V1渠道包方案一样），然后将apk签名文件删除，在重新签名不就好了么。
 apk 本质上就是一个 zip 文件，删除签名文件需要重新压缩，这也可能存在问题:
 1. 不同的压缩算法生成的文件和原apk可能不一致了
 2. 安卓的有些资源文件不能参与压缩
