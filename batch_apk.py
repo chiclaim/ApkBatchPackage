@@ -9,7 +9,7 @@ import zipfile
 
 def write_channel_to_apk(apk_file, channel_name):
     z = zipfile.ZipFile(apk_file, 'a', zipfile.ZIP_DEFLATED)
-    empty_channel_file = f"META-INF/CHANNEL_{channel_name}"
+    empty_channel_file = f"META-INF/channel_{channel_name}"
     temp = "temp.apk"
     if not os.path.exists(temp):
         open(temp, 'a').close()
